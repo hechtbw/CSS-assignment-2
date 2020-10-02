@@ -6,9 +6,17 @@ html {
   box-sizing: inherit;
 }
 
-section {
-  max-width: 600px;
+article {
+  display: flex;
+  justify-content: space-between;
 }
+
+section {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
+
 
 header {
   display: flex;
@@ -42,32 +50,15 @@ footer {
   font-size: .8rem;
 }
 
-.text {
-  background-color: #fff;
-  color: #000;
-  font-size: 1rem;
-  padding: 0 2rem 2rem 2rem;
-  margin-bottom: 2rem;
-}
 
-.photo {
-  font-size: .8rem;
-  margin-top: 2rem;
-}
 
 #cougar {
   background-color: #FDE9D3;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   color: #000;
 }
 
 #lion {
   background-color: #FFD5AE;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 #lion .photo p {
@@ -76,17 +67,27 @@ footer {
 
 #tiger {
   background-color: #FFBD82;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 #tiger .photo p {
   color: #000;
 }
 
-h2 {
-  text-align: center;
+
+.text {
+  color: #000;
+  font-size: 1rem;
+  padding: 0 2rem 2rem 2rem;
+  margin-bottom: 2rem;
+  flex: 1 1 auto;
+  width: 600px;
+}
+
+.photo {
+  font-size: .8rem;
+  margin-top: 2rem;
+  flex: 1 1 auto;
+  width: 600px;
 }
 /* you may add to or change the body rule */
 body {
@@ -97,8 +98,7 @@ body {
 }
 img {
     max-width: 100%; /* DO NOT delete or change this line */
-    display: block;
-    margin: 0 auto;
+
 }
 
 /* ----- SUGGESTED COLORS -----
